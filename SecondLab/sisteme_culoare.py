@@ -1,5 +1,25 @@
 import cv2
 from matplotlib import pyplot as plt
-path =r'C:\Users\nicuuu\PycharmProjects\pythonProject\image-refactoring\SecondLab'
+path =r'C:\Users\nicuuu\PycharmProjects\pythonProject\image-refactoring\SecondLab\flori.jpeg'
 img = cv2.imread(path)
 fig = plt.figure()
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Window',img)
+cv2.waitKey(1000)
+cv2.imshow('Window',gray)
+cv2.waitKey(1000)
+imgYCC = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
+cv2.imshow('Window',imgYCC)
+cv2.waitKey(1000)
+imgHSV = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
+cv2.imshow('Window',imgHSV)
+cv2.waitKey(1000)
+imgHLS= cv2.cvtColor(img, cv2.COLOR_RGB2HLS)
+cv2.imshow('Window',imgHLS)
+cv2.waitKey(1000)
+imgLab= cv2.cvtColor(img, cv2.COLOR_RGB2Lab)
+cv2.imshow('Window',imgLab)
+cv2.waitKey(1000)
+imgLuv=cv2.cvtColor(img, cv2.COLOR_RGB2Luv)
+cv2.imshow('Window',imgLuv)
+cv2.waitKey(1000)
