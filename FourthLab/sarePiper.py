@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from skimage import filters
 from PIL import Image, ImageFilter
-path = r'C:\Users\nicuuu\PycharmProjects\pythonProject\image-refactoring\FourthLab\butterfly.jpg'
+path = r'C:\Users\nicuuu\PycharmProjects\pythonProject\image-refactoring\FourthLab\bmw4.jpg'
 img = cv2.imread(path,0)
 noise_img = random_noise(img, mode='s&p', amount=0.3)
 medie7 = cv2.blur(img,(11,11))
@@ -25,4 +25,5 @@ plt.subplot(232),plt.imshow(noise_img),plt.title('Zgomot S&P')
 plt.subplot(233),plt.imshow(medie7),plt.title('Medie 11x11')
 plt.subplot(234),plt.imshow(I),plt.title('Filtrul Log')
 plt.subplot(235),plt.imshow(edge_scharr),plt.title('Filtrul Scharr')
+
 plt.show()
