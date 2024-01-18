@@ -10,7 +10,7 @@ model = cv2.dnn.readNet(model='../../input/DenseNet_121.caffemodel',
                       config='../../input/DenseNet_121.prototxt',
                       framework='Caffe')
 # incarcam imaginea de pe disc
-image = cv2.imread('m8.jpeg')
+image = cv2.imread( 'm8.jpeg')
 # punem imaginea in evidenta
 blob = cv2.dnn.blobFromImage(image=image, scalefactor=0.01, size=(224, 224),
                              mean=(104, 117, 123))

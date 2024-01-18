@@ -14,7 +14,7 @@ model = cv2.dnn.readNet(model='../../input/frozen_inference_graph.pb',
                         framework='TensorFlow')
 
 # se citeste imaginea de pe disk
-image = cv2.imread('biciclete.png')
+image = cv2.imread('m8.jpeg')
 image_height, image_width, _ = image.shape
 # se creaaza un blob pentru imagine
 blob = cv2.dnn.blobFromImage(image=image, size=(300, 300), mean=(104, 117, 123),

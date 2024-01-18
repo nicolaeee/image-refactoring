@@ -15,7 +15,7 @@ model = cv2.dnn.readNet(model='../../input/frozen_inference_graph.pb',
                         framework='TensorFlow')
 
 # capture the video
-cap = cv2.VideoCapture('../../input/vtest.avi')
+cap = cv2.VideoCapture('../../input/car.mp4')
 # get the video frames' width and height for proper saving of videos
 frame_width = int(cap.get(3))
 frame_height = int(cap.get(4))
